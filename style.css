@@ -1,0 +1,36 @@
+img{
+    width:300px;
+    height:200px;
+}
+body{
+    text-align:center;
+    font-family: 'Arial';
+    font-size:medium;
+    background-color:rgb(255, 210, 210);
+}
+/*paragraph fonts*/
+p {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: small;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+/*navigationbar*/
+.navbar{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:20px;
+position:sticky;
+top:0;
+z-index:100;
+}
+.navbar a:hover{color:white;}
+
+section{min-height:100vh;
+padding:80px 40px;
+box-sizing:border-box;
+scroll-margin-top:70px;}
