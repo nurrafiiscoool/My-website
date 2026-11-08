@@ -1,6 +1,11 @@
 img{
-    width:300px;
-    height:200px;
+    width:350px;
+    height:500px;
+
+    border:3px solid #2fa903;
+    border-radius:20px;
+    padding: 2px;
+
 }
 body{
     text-align:center;
@@ -12,25 +17,61 @@ body{
 p {
     text-align: center;
     font-family: 'Arial';
-    font-size: small;
+    font-size: large;
+background-color:#fff0e8;
+    border:2px solid hsl(13, 66%, 82%);
+    border-radius: 20px;
+
+    padding: 25px;
+    margin:20px;
+
 }
 
 html{
     scroll-behavior:smooth;
 }
-/*navigationbar*/
-.navbar{
-display:flex;
-justify-content:center;
-gap:15px;
-padding:20px;
-position:sticky;
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background-color: #f8d6d4;
+}
+
+/* navigation links */
+nav a {
+    text-decoration: none;
+    color: #594b42;
+    font-family: comic sans ms;
+    font-size: 17px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #b58d83;
+    color: #fff8ef;
+}
+nav{position:sticky;
 top:0;
 z-index:100;
 }
-.navbar a:hover{color:white;}
+
 
 section{min-height:100vh;
 padding:80px 40px;
 box-sizing:border-box;
 scroll-margin-top:70px;}
+
+.profile-pic{
+width:400px;
+height:400px;
+border-radius:50%;
+object-fit:cover;
+
+}
