@@ -68,10 +68,13 @@ padding:80px 40px;
 box-sizing:border-box;
 scroll-margin-top:70px;}
 
+/*first img / profile pic*/
 .profile-pic{
 width:400px;
 height:400px;
 border-radius:50%;
 object-fit:cover;
+object-position:center;
+
 
 }
