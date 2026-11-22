@@ -276,3 +276,159 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
+
+/*/ Top 3 Hikes */
+
+#top-hikes{
+width: 100%;
+box-sizing:border-box;
+text-align:center;
+
+}{}
+
+
+#top-hikes {
+
+padding: 50px 30px;
+text-align: center;
+
+}
+
+#top-hikes h1 {
+
+color: #594b42;
+font-size:32px;
+
+}
+
+.ranking-intro {
+    background: none;
+    border: none;
+    padding:0 ;
+    margin:15px auto 35px;
+
+}
+/* ranking layout */
+
+.ranking-container {
+display: grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+align-items: start;
+justify-content:center;
+gap: 25px;
+
+max-width:1400px;
+width:calc(100% - 60px);
+margin: 40px auto;
+box-sizing: border-box;
+}
+
+/* RANKING CARDS */
+
+.ranking-card {
+width:100%;
+box-sizing:border-box;
+background:#fff0e8;
+border:2px solid #e9aaa5;
+border-radius:25px;
+padding:15px;    
+text-align:center;
+transition: transform 0.3s ease;
+}
+
+.ranking-card:hover{
+transform:translateY(-8px);
+
+}
+
+
+/* First place*/
+
+.ranking-card.first{
+border:3px solid #d6ad55;
+transform: translateY(-15px);
+}
+
+/* rank label*/
+.rank{
+color:#594b42;
+font-size :22px;
+font-weight:bold;
+margin-bottom: 12px;
+
+}
+
+.ranking-card img{
+width:100%;
+
+
+height: 280px;
+object-fit: contain;
+display:block;
+
+
+border-radius: 17px;
+}
+
+/*Ranking text*/
+.ranking-card h3{
+
+
+color:#594b42;
+margin:15px 0 8px;
+
+}
+
+.ranking-card p {
+background:none;
+font-size:14px;
+border:none;
+padding:0;
+margin:0;
+color:#78665e;
+line-height: 1.6;
+}
+
+@media (max-width:700px){
+.ranking-container {grid-template-columns: 1fr;
+    width:90%
+
+}
+.ranking-card.first{
+transform:none;
+}
+    
+ }
+
+
+
+
+.back-button{
+position:absolute;
+top:25px;
+left:25px;
+
+padding:12px 20px;
+background:rgba(255,255,255,0.5);
+backdrop-filter: blur(10px);
+
+border:1px solid rgba(255,255,255,0.7);
+border-radius: 25px;
+color:#594b42;
+font-family:Arial;
+font-size: 14px;
+font-weight:bold;
+text-decoration:none;
+ 
+transition:all 0.3s ease;
+}
+
+.back-button:hover{
+    background:#b58d83;
+    color:#fff8ef;
+    transform:translateY(-3px);
+}
+
+
+
+
